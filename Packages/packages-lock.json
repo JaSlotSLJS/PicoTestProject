@@ -208,9 +208,9 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.picoxr": {
-      "version": "file:C:/Users/Jasper Slot/Desktop/Pico SDK/PICO Unity Integration SDK v212-3/PICO Unity Integration SDK v212",
+      "version": "file:PICO_Unity_Integration_SDK_v212",
       "depth": 0,
-      "source": "local",
+      "source": "embedded",
       "dependencies": {
         "com.unity.xr.management": "3.2.16",
         "com.unity.ugui": "1.0.0",
