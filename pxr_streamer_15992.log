@@ -1,0 +1,4 @@
+[2023-09-28 17:32:15.944] [pxr_streamer] [info] ***********  Log Begin **********
+[2023-09-28 17:32:15.944] [pxr_streamer] [info] process id= 15992
+[2023-09-28 17:32:15.944] [pxr_streamer] [error] rpc_terminal.h:60 Call: msg =Hello, rpc error = A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond., this = 0x891ff300
+[2023-09-28 17:32:16.945] [pxr_streamer] [error] rpc_terminal.h:60 Call: msg =QueryRemoteTerminals, rpc error = A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond., this = 0x891ff300
