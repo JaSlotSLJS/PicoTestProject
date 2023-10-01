@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using TMPro;
 
 public class MicrochipScanner : MonoBehaviour
 {
+    
+    public TextMeshProUGUI idText;
+    public TextMeshProUGUI visaText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +31,8 @@ public class MicrochipScanner : MonoBehaviour
         {
             Debug.Log($"This object named {hit.collider.gameObject.name} has been scanned");
         }
+
+        idText.text = $"{hit.collider.gameObject.name}";
+        visaText.text = $"{hit.collider.gameObject.name} Has a specific visa";
     }
 }
