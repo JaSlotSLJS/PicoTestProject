@@ -29,9 +29,14 @@ public class MicrochipScanner : MonoBehaviour
         Debug.Log("Scanning the Microchip");
         if (Physics.Raycast(scanRay, out RaycastHit hit, 10))
         {
+            if (hit.collider.CompareTag("NPC"))
+            {
+                hit.collider.gameObject.GetComponent<NPCMovement>().scanned = true; 
+
+            }
             Debug.Log($"This object named {hit.collider.gameObject.name} has been scanned");
         }
-
+       
         idText.text = $"{hit.collider.gameObject.name}";
         visaText.text = $"{hit.collider.gameObject.name} Has a specific visa";
     }

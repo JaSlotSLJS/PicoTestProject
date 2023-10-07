@@ -9,12 +9,13 @@ public class NPCMovement : MonoBehaviour
     float speed = 3;
     public bool approved = false;
     public bool denied = false;
-
+    public bool scanned = false;
     NpcState npcState;
 
     enum NpcState
     {
         goingToThedesk,
+        ScanningMicrochip,
         waitForApproval,
         accepted,
         Rejected,
@@ -41,9 +42,16 @@ public class NPCMovement : MonoBehaviour
                 }
                 if (transform.position == patrolPoints[1].position)
                 {
-                    npcState = NpcState.waitForApproval;
+                    npcState = NpcState.ScanningMicrochip;
                 }
                 transform.position = Vector3.MoveTowards(transform.position, patrolPoints[targetPoint].position, speed * Time.deltaTime);
+                Debug.Log($"{npcState}");
+                break;
+            case NpcState.ScanningMicrochip:
+                if (scanned)
+                {
+                    npcState = NpcState.waitForApproval;
+                }
                 Debug.Log($"{npcState}");
                 break;
             case NpcState.waitForApproval:
