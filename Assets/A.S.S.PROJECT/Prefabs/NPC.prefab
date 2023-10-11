@@ -199,19 +199,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idInfo:
     photoID: {fileID: 21300000, guid: 537affcffacc2e64d85a6563d0547471, type: 3}
-    name: asd
-    age: dsa
-    idNumber: aaa
-    nationality: sss
-    antivirus: ddd
+    name: Effie Trinket
+    age: 47
+    idNumber: BSN2-38H5-83LO
+    nationality: Mexican
+    antivirus: BiSnake 2.15.29
   visaInfo:
     photoID: {fileID: 21300000, guid: 537affcffacc2e64d85a6563d0547471, type: 3}
-    reason: asd
-    name: dsa
-    age: aaa
-    idNumber: sss
-    nationality: ddd
-    antivirus: fff
+    reason: Immigration
+    name: Effie Trinket
+    age: 47
+    idNumber: BSN2-38H5-83LO
+    nationality: American
+    antivirus: BiSnake 2.15.29
 --- !u!114 &1926674268429732572
 MonoBehaviour:
   m_ObjectHideFlags: 0
