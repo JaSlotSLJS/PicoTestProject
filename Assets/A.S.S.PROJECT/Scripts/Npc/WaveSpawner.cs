@@ -17,23 +17,27 @@ public class WaveSpawner : MonoBehaviour
     }
     private void Update()
     {
-        //if (!isThereNPC)
-        //{
-        //    SpawnNPC();
-            
-        //    return;
-        //    //countdown = timeBetweenWaves;
-        //}
+        if (!isThereNPC)
+        {
+            //SpawnNPC();
+
+            return;
+            //countdown = timeBetweenWaves;
+        }
 
         //countdown -= Time.deltaTime;
     }
     public void SpawnNPC()
     {
         //isThereNPC = true;
-        Instantiate(npcPrefab, spawnPoint.position, spawnPoint.rotation);
-        return;
+        if (!isThereNPC)
+        {
+            Instantiate(npcPrefab, spawnPoint.position, spawnPoint.rotation);
+            Debug.Log("NPC SAPWNING");
+            isThereNPC = true;
 
-        
-        Debug.Log("NPC SAPWNING");
+        }
+
+
     }
 }

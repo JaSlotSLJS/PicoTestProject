@@ -107,7 +107,7 @@ public class NPC : MonoBehaviour
         Destroy(gameObject);
         if (wavePointIndex >= WayPoints.points.Length - 2 || wavePointIndex >= WayPoints.points.Length - 3)
         {
-
+            spawn.isThereNPC = false;
             spawn.SpawnNPC();
             return;
         }
